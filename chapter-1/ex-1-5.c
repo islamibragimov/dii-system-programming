@@ -1,13 +1,10 @@
 #include <stdio.h>
-int main()
-{
-    for (float fahr = 300; fahr >= 0; fahr = fahr - 20) {
-        float cel = 5*(fahr - 32)/9;
-        printf("%f\t%f\n", fahr, cel);
-    } 
-
+int main(void) {
+    for (float i = 300; i >= 0; i-=20) {
+        printf("%f\t%f\n", i, (5.0/9.0)*(i-32.0));
+    }
+    return 0;
 }
-
 
 // in exercise 1.5 the step is not given so i took it as 20 
 

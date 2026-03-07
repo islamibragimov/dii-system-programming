@@ -1,18 +1,10 @@
 #include <stdio.h>
 
-int main()
-{
-    float fahr, cel;
-    
-    float lower = 0;
-    float upper = 300;
-    float step = 20;
-    
-    fahr = lower;
-    while (fahr<=upper)
-    {
-        cel = 5*(fahr-32)/9;
-        printf("%f\t%f\n", fahr, cel);
-        fahr = fahr + step;
+int main() {
+    float fahr=0;
+    while (fahr<=300){
+        printf("%.10f\t%.10f\n", fahr, (5.0/9.0)*(fahr-32));
+        fahr += 20;
     }
 }
+
