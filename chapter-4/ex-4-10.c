@@ -4,7 +4,7 @@ void reverse(char s[], int k1, int k2);
 
 int main()
 {
-    char s[] = "Aminjon";
+    char s[] = "Hellomaleykum!";
     reverse(s, 0, 6);
     printf("%s", s);
     return 0;
